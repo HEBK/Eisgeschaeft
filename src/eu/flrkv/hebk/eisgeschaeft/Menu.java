@@ -4,13 +4,23 @@ import java.util.InputMismatchException;
 
 public class Menu {
 
+    /**
+     * Var used to save the company name
+     */
     private String name;
 
+    /**
+     * Constructor of class Menu
+     * @param companyName Sets the company name in messages
+     */
     public Menu(String companyName)
     {
         this.name = companyName;
     }
 
+    /**
+     * Prints the header including the company name
+     */
     public void printHeader()
     {
         System.out.println("------------->> " + name + " <<-------------");
@@ -24,14 +34,12 @@ public class Menu {
         printHeader();
         this.sleep(2);
     }
-
     public void storeIsClosed()
     {
         printHeader();
         System.out.println("Wir haben geschlossen!");
         printHeader();
     }
-
     public void thankyou()
     {
         this.clearConsole();
