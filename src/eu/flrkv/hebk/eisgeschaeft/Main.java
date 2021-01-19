@@ -12,7 +12,7 @@ class Main {
         g1.addProduct(new Produkt("Schokoeis", 1.50, new String[]{"Schokolade", "Salz", "Milch"}));
         g1.addProduct(new Produkt("Cookieeis (Ja, die aus dem Browser!)", 2, new String[]{"Kekse", "Schokolade", "Milch"}));
 
-        g1.setStoreStatus(false);
+        g1.setStoreStatus(true);
         g1.run();
     }
 }
